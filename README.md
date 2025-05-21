@@ -1,58 +1,47 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# My Assignment Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, clean, and humanlike UI dashboard built with **React**, **Tailwind CSS**, and **shadcn/ui** components. This project uses blocks like `sidebar-07` and `dashboard-01` with organized structure, dummy data, and optional routing features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔳 Sidebar (sidebar-07 from shadcn)
+- 📊 Dashboard/Table view (dashboard-01)
+- 💡 Responsive design for all screen sizes
+- 🧩 Component reuse and modular folder structure
+- 🔁 Dummy routing with React Router (optional)
+- ⏳ Loading state and skeleton UI (optional)
+- 📁 Dummy data to simulate content
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧱 UI Blocks Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [`sidebar-07`](https://ui.shadcn.com/blocks?category=sidebar)
+- [`dashboard-01`](https://ui.shadcn.com/blocks?category=dashboard)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Blocks added via:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-=======
-# My-Assigment
->>>>>>> 93c5aa6719d05d1bb955d8dcea2dc33779c1b03f
+```bash
+npx shadcn@latest add sidebar-07
+npx shadcn@latest add dashboard-01
+
+
+
+
+
+
+My __ Folder __Structure
+ src/
+├── components/
+│   ├── ui/               # Base UI elements
+│   ├── layout/           # Sidebar, Navbar
+│   └── pages/            # Dashboard, Table, etc.
+├── data/                 # Dummy data files
+├── routes/               # React Router routes
+├── App.tsx
+└── main.tsx
+
+
+
