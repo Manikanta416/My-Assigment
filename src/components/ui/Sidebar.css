@@ -1,0 +1,59 @@
+```css
+/* sidebar.css */
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  border-right: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+}
+
+.content-container {
+  flex: 1;
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+  width: 100%;
+}
+
+/* Adjust the margin based on the sidebar state */
+.content-container-expanded {
+  margin-left: 240px; /* Width of expanded sidebar */
+}
+
+.content-container-collapsed {
+  margin-left: 60px; /* Width of collapsed sidebar */
+}
+
+@media (max-width: 767px) {
+  .content-container-expanded,
+  .content-container-collapsed {
+    margin-left: 0;
+  }
+}
+
+/* Utility classes for the ResizablePanel */
+.sidebar-expanded {
+  min-width: 240px !important;
+}
+
+.sidebar-collapsed {
+  min-width: 60px !important;
+}
+
+/* Make sure ResizableHandle appears correctly */
+[data-panel-handle] {
+  background-color: hsl(var(--border));
+  transition: background-color 0.2s;
+}
+
+[data-panel-handle]:hover {
+  background-color: hsl(var(--primary));
+}
+```
